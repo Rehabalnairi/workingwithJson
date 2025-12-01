@@ -23,7 +23,7 @@ async function getUsers(){
     try{
         const response = await fetch("https://jsonplaceholder.typicode.com/users");
         const data = await response.json();
-        console.log(data[0].email);  
+        console.log(data[0].name);  
     }
     catch(error){
         console.error('Error fetching users:', error);
@@ -52,6 +52,6 @@ async function addEng(){
     }
 }
 
-getUsers();
+
 addEng();
 
